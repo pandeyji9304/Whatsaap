@@ -1,0 +1,1075 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A94040C82C8AA8D1007F45CE /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94040C72C8AA8D1007F45CE /* ChatView.swift */; };
+		A94040CA2C8AD761007F45CE /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94040C92C8AD761007F45CE /* ChatViewModel.swift */; };
+		A96FDFD72C8C24EA006625A7 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FDFD62C8C24EA006625A7 /* ChatMessageCell.swift */; };
+		A96FDFD92C8C27CD006625A7 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96FDFD82C8C27CD006625A7 /* ChatBubble.swift */; };
+		A9A928DD2C9806F1004C9856 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A928DC2C9806F1004C9856 /* GoogleService-Info.plist */; };
+		A9A928DF2C9867D4004C9856 /* ChatMessageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A928DE2C9867D4004C9856 /* ChatMessageCellViewModel.swift */; };
+		A9A928E12C98839B004C9856 /* EmojiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A928E02C98839B004C9856 /* EmojiTextField.swift */; };
+		A9AC54692C93D208007D2C84 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54682C93D208007D2C84 /* ProfileViewModel.swift */; };
+		A9AC546C2C94201D007D2C84 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC546B2C94201D007D2C84 /* SettingsView.swift */; };
+		A9AC546E2C942F0F007D2C84 /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC546D2C942F0F007D2C84 /* SettingsOption.swift */; };
+		A9AC54712C9439C0007D2C84 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54702C9439C0007D2C84 /* SettingsViewModel.swift */; };
+		A9AC54742C943B80007D2C84 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54732C943B80007D2C84 /* WelcomeView.swift */; };
+		A9AC54762C9488F8007D2C84 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54752C9488F8007D2C84 /* LoginView.swift */; };
+		A9AC54792C948B09007D2C84 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54782C948B09007D2C84 /* LoginViewModel.swift */; };
+		A9AC547B2C949E7E007D2C84 /* FloatingField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC547A2C949E7E007D2C84 /* FloatingField.swift */; };
+		A9AC547D2C94A4B2007D2C84 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC547C2C94A4B2007D2C84 /* RegistrationView.swift */; };
+		A9AC547F2C94A5B2007D2C84 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC547E2C94A5B2007D2C84 /* RegistrationViewModel.swift */; };
+		A9AC54832C94AAD3007D2C84 /*  AuthentificationButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54822C94AAD3007D2C84 /*  AuthentificationButtonModifier.swift */; };
+		A9AC548E2C954ABF007D2C84 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC548D2C954ABF007D2C84 /* AuthService.swift */; };
+		A9AC54932C95566D007D2C84 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A9AC54922C95566D007D2C84 /* FirebaseAuth */; };
+		A9AC54952C95566D007D2C84 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A9AC54942C95566D007D2C84 /* FirebaseFirestore */; };
+		A9AC54972C95566D007D2C84 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A9AC54962C95566D007D2C84 /* FirebaseFirestoreSwift */; };
+		A9AC54992C95566D007D2C84 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A9AC54982C95566D007D2C84 /* FirebaseStorage */; };
+		A9AC549B2C955EB2007D2C84 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC549A2C955EB2007D2C84 /* WelcomeViewModel.swift */; };
+		A9AC549F2C95A4A5007D2C84 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC549E2C95A4A5007D2C84 /* RootView.swift */; };
+		A9AC54A12C95A4FC007D2C84 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54A02C95A4FC007D2C84 /* RootViewModel.swift */; };
+		A9AC54A32C95AAF6007D2C84 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54A22C95AAF6007D2C84 /* UserService.swift */; };
+		A9AC54A62C969E53007D2C84 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A9AC54A52C969E53007D2C84 /* Kingfisher */; };
+		A9AC54AB2C96A8FC007D2C84 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54AA2C96A8FC007D2C84 /* NewMessageViewModel.swift */; };
+		A9AC54AD2C96D1A6007D2C84 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54AC2C96D1A6007D2C84 /* ChatService.swift */; };
+		A9AC54AF2C973632007D2C84 /* IndoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54AE2C973632007D2C84 /* IndoxService.swift */; };
+		A9AC54B32C97A9C0007D2C84 /* StorageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC54B22C97A9BF007D2C84 /* StorageUploader.swift */; };
+		A9E39AE82C8D804400541BB0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E39AE72C8D804400541BB0 /* Date.swift */; };
+		A9E39AEA2C8D875400541BB0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E39AE92C8D875400541BB0 /* Message.swift */; };
+		A9E39AED2C8FFAD900541BB0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E39AEC2C8FFAD900541BB0 /* ProfileView.swift */; };
+		A9EC8EB32C8808B90034589B /* Whatapp_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8EB22C8808B90034589B /* Whatapp_CloneApp.swift */; };
+		A9EC8EB52C8808B90034589B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8EB42C8808B90034589B /* ContentView.swift */; };
+		A9EC8EB72C8808BB0034589B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EC8EB62C8808BB0034589B /* Assets.xcassets */; };
+		A9EC8EBA2C8808BB0034589B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EC8EB92C8808BB0034589B /* Preview Assets.xcassets */; };
+		A9EC8EC42C8808BB0034589B /* Whatapp_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8EC32C8808BB0034589B /* Whatapp_CloneTests.swift */; };
+		A9EC8ECE2C8808BB0034589B /* Whatapp_CloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8ECD2C8808BB0034589B /* Whatapp_CloneUITests.swift */; };
+		A9EC8ED02C8808BB0034589B /* Whatapp_CloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8ECF2C8808BB0034589B /* Whatapp_CloneUITestsLaunchTests.swift */; };
+		A9EC8EF32C89A2700034589B /* MainTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8EF22C89A2700034589B /* MainTabbarView.swift */; };
+		A9EC8EF82C89A4BC0034589B /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8EF72C89A4BC0034589B /* InboxView.swift */; };
+		A9EC8EFB2C89ADEF0034589B /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8EFA2C89ADEF0034589B /* NavigationBarColor.swift */; };
+		A9EC8EFD2C89B1AE0034589B /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8EFC2C89B1AE0034589B /* InboxRowView.swift */; };
+		A9EC8F002C8A44890034589B /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8EFF2C8A44890034589B /* CircularProfileImageView.swift */; };
+		A9EC8F022C8A47460034589B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8F012C8A47460034589B /* User.swift */; };
+		A9EC8F052C8A4B860034589B /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8F042C8A4B860034589B /* NewMessageView.swift */; };
+		A9EC8F082C8A54670034589B /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8F072C8A54670034589B /* InboxViewModel.swift */; };
+		A9EC8F0A2C8A62A20034589B /* ContectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC8F092C8A62A20034589B /* ContectView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9EC8EC02C8808BB0034589B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9EC8EA72C8808B90034589B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9EC8EAE2C8808B90034589B;
+			remoteInfo = "Whatapp-Clone";
+		};
+		A9EC8ECA2C8808BB0034589B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9EC8EA72C8808B90034589B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9EC8EAE2C8808B90034589B;
+			remoteInfo = "Whatapp-Clone";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A94040C72C8AA8D1007F45CE /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		A94040C92C8AD761007F45CE /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		A96FDFD62C8C24EA006625A7 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		A96FDFD82C8C27CD006625A7 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		A9A928DC2C9806F1004C9856 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9A928DE2C9867D4004C9856 /* ChatMessageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCellViewModel.swift; sourceTree = "<group>"; };
+		A9A928E02C98839B004C9856 /* EmojiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextField.swift; sourceTree = "<group>"; };
+		A9AC54682C93D208007D2C84 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A9AC546B2C94201D007D2C84 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A9AC546D2C942F0F007D2C84 /* SettingsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOption.swift; sourceTree = "<group>"; };
+		A9AC54702C9439C0007D2C84 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A9AC54732C943B80007D2C84 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A9AC54752C9488F8007D2C84 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A9AC54782C948B09007D2C84 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A9AC547A2C949E7E007D2C84 /* FloatingField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingField.swift; sourceTree = "<group>"; };
+		A9AC547C2C94A4B2007D2C84 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		A9AC547E2C94A5B2007D2C84 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		A9AC54822C94AAD3007D2C84 /*  AuthentificationButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " AuthentificationButtonModifier.swift"; sourceTree = "<group>"; };
+		A9AC548D2C954ABF007D2C84 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A9AC549A2C955EB2007D2C84 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		A9AC549E2C95A4A5007D2C84 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A9AC54A02C95A4FC007D2C84 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		A9AC54A22C95AAF6007D2C84 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A9AC54AA2C96A8FC007D2C84 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
+		A9AC54AC2C96D1A6007D2C84 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		A9AC54AE2C973632007D2C84 /* IndoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoxService.swift; sourceTree = "<group>"; };
+		A9AC54B22C97A9BF007D2C84 /* StorageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUploader.swift; sourceTree = "<group>"; };
+		A9E39AE72C8D804400541BB0 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		A9E39AE92C8D875400541BB0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A9E39AEC2C8FFAD900541BB0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A9EC8EAF2C8808B90034589B /* Whatapp-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whatapp-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EC8EB22C8808B90034589B /* Whatapp_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatapp_CloneApp.swift; sourceTree = "<group>"; };
+		A9EC8EB42C8808B90034589B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9EC8EB62C8808BB0034589B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9EC8EB92C8808BB0034589B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9EC8EBF2C8808BB0034589B /* Whatapp-CloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whatapp-CloneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EC8EC32C8808BB0034589B /* Whatapp_CloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatapp_CloneTests.swift; sourceTree = "<group>"; };
+		A9EC8EC92C8808BB0034589B /* Whatapp-CloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whatapp-CloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EC8ECD2C8808BB0034589B /* Whatapp_CloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatapp_CloneUITests.swift; sourceTree = "<group>"; };
+		A9EC8ECF2C8808BB0034589B /* Whatapp_CloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatapp_CloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9EC8EF22C89A2700034589B /* MainTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarView.swift; sourceTree = "<group>"; };
+		A9EC8EF72C89A4BC0034589B /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		A9EC8EFA2C89ADEF0034589B /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
+		A9EC8EFC2C89B1AE0034589B /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		A9EC8EFF2C8A44890034589B /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		A9EC8F012C8A47460034589B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A9EC8F042C8A4B860034589B /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		A9EC8F072C8A54670034589B /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
+		A9EC8F092C8A62A20034589B /* ContectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContectView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9EC8EAC2C8808B90034589B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AC54932C95566D007D2C84 /* FirebaseAuth in Frameworks */,
+				A9AC54992C95566D007D2C84 /* FirebaseStorage in Frameworks */,
+				A9AC54952C95566D007D2C84 /* FirebaseFirestore in Frameworks */,
+				A9AC54972C95566D007D2C84 /* FirebaseFirestoreSwift in Frameworks */,
+				A9AC54A62C969E53007D2C84 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EC8EBC2C8808BB0034589B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EC8EC62C8808BB0034589B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A94040C32C8AA877007F45CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A94040C72C8AA8D1007F45CE /* ChatView.swift */,
+				A96FDFD62C8C24EA006625A7 /* ChatMessageCell.swift */,
+				A96FDFD82C8C27CD006625A7 /* ChatBubble.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A94040C42C8AA895007F45CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A94040C92C8AD761007F45CE /* ChatViewModel.swift */,
+				A9A928DE2C9867D4004C9856 /* ChatMessageCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9AC54672C93D1DB007D2C84 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC54682C93D208007D2C84 /* ProfileViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A9AC546A2C9415D0007D2C84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC546B2C94201D007D2C84 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9AC546F2C94399B007D2C84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC54702C9439C0007D2C84 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9AC54722C943B57007D2C84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC54732C943B80007D2C84 /* WelcomeView.swift */,
+				A9AC54752C9488F8007D2C84 /* LoginView.swift */,
+				A9AC547C2C94A4B2007D2C84 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9AC54772C948AF0007D2C84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC54782C948B09007D2C84 /* LoginViewModel.swift */,
+				A9AC547E2C94A5B2007D2C84 /* RegistrationViewModel.swift */,
+				A9AC549A2C955EB2007D2C84 /* WelcomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9AC549C2C95A47E007D2C84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC549E2C95A4A5007D2C84 /* RootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9AC549D2C95A488007D2C84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC54A02C95A4FC007D2C84 /* RootViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9AC54A92C96A8D9007D2C84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC54AA2C96A8FC007D2C84 /* NewMessageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9E39AE62C8D803000541BB0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9E39AE72C8D804400541BB0 /* Date.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A9E39AEB2C8FFAC600541BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9E39AEC2C8FFAD900541BB0 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9EC8EA62C8808B90034589B = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EB12C8808B90034589B /* Whatapp-Clone */,
+				A9EC8EC22C8808BB0034589B /* Whatapp-CloneTests */,
+				A9EC8ECC2C8808BB0034589B /* Whatapp-CloneUITests */,
+				A9EC8EB02C8808B90034589B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9EC8EB02C8808B90034589B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EAF2C8808B90034589B /* Whatapp-Clone.app */,
+				A9EC8EBF2C8808BB0034589B /* Whatapp-CloneTests.xctest */,
+				A9EC8EC92C8808BB0034589B /* Whatapp-CloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9EC8EB12C8808B90034589B /* Whatapp-Clone */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EE22C880AC10034589B /* Core */,
+				A9EC8EE12C880A060034589B /* App */,
+				A9EC8EE42C880AE90034589B /* Services */,
+				A9EC8EE32C880AD50034589B /* Modal */,
+				A9EC8EE52C880AFC0034589B /* Utils */,
+				A9EC8EB42C8808B90034589B /* ContentView.swift */,
+				A9EC8EB62C8808BB0034589B /* Assets.xcassets */,
+				A9EC8EB82C8808BB0034589B /* Preview Content */,
+			);
+			path = "Whatapp-Clone";
+			sourceTree = "<group>";
+		};
+		A9EC8EB82C8808BB0034589B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EB92C8808BB0034589B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9EC8EC22C8808BB0034589B /* Whatapp-CloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EC32C8808BB0034589B /* Whatapp_CloneTests.swift */,
+			);
+			path = "Whatapp-CloneTests";
+			sourceTree = "<group>";
+		};
+		A9EC8ECC2C8808BB0034589B /* Whatapp-CloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8ECD2C8808BB0034589B /* Whatapp_CloneUITests.swift */,
+				A9EC8ECF2C8808BB0034589B /* Whatapp_CloneUITestsLaunchTests.swift */,
+			);
+			path = "Whatapp-CloneUITests";
+			sourceTree = "<group>";
+		};
+		A9EC8EE12C880A060034589B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EB22C8808B90034589B /* Whatapp_CloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A9EC8EE22C880AC10034589B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EEE2C880BD20034589B /* Tabbar */,
+				A9EC8EED2C880BC90034589B /* Settings */,
+				A9EC8EEC2C880BBF0034589B /* Root */,
+				A9EC8EEB2C880BB70034589B /* Profile  */,
+				A9EC8EEA2C880B9F0034589B /* NewMessage */,
+				A9EC8EE92C880B750034589B /* Inbox */,
+				A9EC8EE82C880B6B0034589B /* Chat */,
+				A9EC8EE72C880B5F0034589B /* Compnents */,
+				A9EC8EE62C880B370034589B /* Authentifiaction */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A9EC8EE32C880AD50034589B /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8F012C8A47460034589B /* User.swift */,
+				A9E39AE92C8D875400541BB0 /* Message.swift */,
+				A9AC546D2C942F0F007D2C84 /* SettingsOption.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		A9EC8EE42C880AE90034589B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC548D2C954ABF007D2C84 /* AuthService.swift */,
+				A9AC54A22C95AAF6007D2C84 /* UserService.swift */,
+				A9AC54AC2C96D1A6007D2C84 /* ChatService.swift */,
+				A9AC54AE2C973632007D2C84 /* IndoxService.swift */,
+				A9AC54B22C97A9BF007D2C84 /* StorageUploader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A9EC8EE52C880AFC0034589B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9E39AE62C8D803000541BB0 /* Extension */,
+				A9EC8EF02C89A2150034589B /* Plist */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A9EC8EE62C880B370034589B /* Authentifiaction */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC54772C948AF0007D2C84 /* ViewModel */,
+				A9AC54722C943B57007D2C84 /* View */,
+			);
+			path = Authentifiaction;
+			sourceTree = "<group>";
+		};
+		A9EC8EE72C880B5F0034589B /* Compnents */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EFE2C8A444E0034589B /* View */,
+				A9EC8EF92C89AD7D0034589B /* Modifiers */,
+			);
+			path = Compnents;
+			sourceTree = "<group>";
+		};
+		A9EC8EE82C880B6B0034589B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A94040C42C8AA895007F45CE /* ViewModel */,
+				A94040C32C8AA877007F45CE /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A9EC8EE92C880B750034589B /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8F062C8A542B0034589B /* ViewModal */,
+				A9EC8EF42C89A3E80034589B /* View */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		A9EC8EEA2C880B9F0034589B /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC54A92C96A8D9007D2C84 /* ViewModel */,
+				A9EC8F032C8A4B630034589B /* View */,
+			);
+			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		A9EC8EEB2C880BB70034589B /* Profile  */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC54672C93D1DB007D2C84 /* View Model */,
+				A9E39AEB2C8FFAC600541BB0 /* View */,
+			);
+			path = "Profile ";
+			sourceTree = "<group>";
+		};
+		A9EC8EEC2C880BBF0034589B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC549D2C95A488007D2C84 /* ViewModel */,
+				A9AC549C2C95A47E007D2C84 /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A9EC8EED2C880BC90034589B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC546F2C94399B007D2C84 /* ViewModel */,
+				A9AC546A2C9415D0007D2C84 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A9EC8EEE2C880BD20034589B /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EF12C89A2370034589B /* View */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		A9EC8EF02C89A2150034589B /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				A9A928DC2C9806F1004C9856 /* GoogleService-Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		A9EC8EF12C89A2370034589B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EF22C89A2700034589B /* MainTabbarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9EC8EF42C89A3E80034589B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EF72C89A4BC0034589B /* InboxView.swift */,
+				A9EC8EFC2C89B1AE0034589B /* InboxRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9EC8EF92C89AD7D0034589B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EFA2C89ADEF0034589B /* NavigationBarColor.swift */,
+				A9AC54822C94AAD3007D2C84 /*  AuthentificationButtonModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		A9EC8EFE2C8A444E0034589B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8EFF2C8A44890034589B /* CircularProfileImageView.swift */,
+				A9AC547A2C949E7E007D2C84 /* FloatingField.swift */,
+				A9A928E02C98839B004C9856 /* EmojiTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9EC8F032C8A4B630034589B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8F042C8A4B860034589B /* NewMessageView.swift */,
+				A9EC8F092C8A62A20034589B /* ContectView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9EC8F062C8A542B0034589B /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC8F072C8A54670034589B /* InboxViewModel.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9EC8EAE2C8808B90034589B /* Whatapp-Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9EC8ED32C8808BB0034589B /* Build configuration list for PBXNativeTarget "Whatapp-Clone" */;
+			buildPhases = (
+				A9EC8EAB2C8808B90034589B /* Sources */,
+				A9EC8EAC2C8808B90034589B /* Frameworks */,
+				A9EC8EAD2C8808B90034589B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Whatapp-Clone";
+			packageProductDependencies = (
+				A9AC54922C95566D007D2C84 /* FirebaseAuth */,
+				A9AC54942C95566D007D2C84 /* FirebaseFirestore */,
+				A9AC54962C95566D007D2C84 /* FirebaseFirestoreSwift */,
+				A9AC54982C95566D007D2C84 /* FirebaseStorage */,
+				A9AC54A52C969E53007D2C84 /* Kingfisher */,
+			);
+			productName = "Whatapp-Clone";
+			productReference = A9EC8EAF2C8808B90034589B /* Whatapp-Clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9EC8EBE2C8808BB0034589B /* Whatapp-CloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9EC8ED62C8808BB0034589B /* Build configuration list for PBXNativeTarget "Whatapp-CloneTests" */;
+			buildPhases = (
+				A9EC8EBB2C8808BB0034589B /* Sources */,
+				A9EC8EBC2C8808BB0034589B /* Frameworks */,
+				A9EC8EBD2C8808BB0034589B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9EC8EC12C8808BB0034589B /* PBXTargetDependency */,
+			);
+			name = "Whatapp-CloneTests";
+			productName = "Whatapp-CloneTests";
+			productReference = A9EC8EBF2C8808BB0034589B /* Whatapp-CloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9EC8EC82C8808BB0034589B /* Whatapp-CloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9EC8ED92C8808BB0034589B /* Build configuration list for PBXNativeTarget "Whatapp-CloneUITests" */;
+			buildPhases = (
+				A9EC8EC52C8808BB0034589B /* Sources */,
+				A9EC8EC62C8808BB0034589B /* Frameworks */,
+				A9EC8EC72C8808BB0034589B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9EC8ECB2C8808BB0034589B /* PBXTargetDependency */,
+			);
+			name = "Whatapp-CloneUITests";
+			productName = "Whatapp-CloneUITests";
+			productReference = A9EC8EC92C8808BB0034589B /* Whatapp-CloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9EC8EA72C8808B90034589B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A9EC8EAE2C8808B90034589B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A9EC8EBE2C8808BB0034589B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A9EC8EAE2C8808B90034589B;
+					};
+					A9EC8EC82C8808BB0034589B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A9EC8EAE2C8808B90034589B;
+					};
+				};
+			};
+			buildConfigurationList = A9EC8EAA2C8808B90034589B /* Build configuration list for PBXProject "Whatapp-Clone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9EC8EA62C8808B90034589B;
+			packageReferences = (
+				A9AC54912C95566D007D2C84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A9AC54A42C969E53007D2C84 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = A9EC8EB02C8808B90034589B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9EC8EAE2C8808B90034589B /* Whatapp-Clone */,
+				A9EC8EBE2C8808BB0034589B /* Whatapp-CloneTests */,
+				A9EC8EC82C8808BB0034589B /* Whatapp-CloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9EC8EAD2C8808B90034589B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EC8EBA2C8808BB0034589B /* Preview Assets.xcassets in Resources */,
+				A9EC8EB72C8808BB0034589B /* Assets.xcassets in Resources */,
+				A9A928DD2C9806F1004C9856 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EC8EBD2C8808BB0034589B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EC8EC72C8808BB0034589B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9EC8EAB2C8808B90034589B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94040CA2C8AD761007F45CE /* ChatViewModel.swift in Sources */,
+				A9AC54692C93D208007D2C84 /* ProfileViewModel.swift in Sources */,
+				A96FDFD92C8C27CD006625A7 /* ChatBubble.swift in Sources */,
+				A9AC54AB2C96A8FC007D2C84 /* NewMessageViewModel.swift in Sources */,
+				A9A928E12C98839B004C9856 /* EmojiTextField.swift in Sources */,
+				A9EC8F052C8A4B860034589B /* NewMessageView.swift in Sources */,
+				A9E39AEA2C8D875400541BB0 /* Message.swift in Sources */,
+				A9AC54AD2C96D1A6007D2C84 /* ChatService.swift in Sources */,
+				A9AC54832C94AAD3007D2C84 /*  AuthentificationButtonModifier.swift in Sources */,
+				A9AC54A32C95AAF6007D2C84 /* UserService.swift in Sources */,
+				A9AC546C2C94201D007D2C84 /* SettingsView.swift in Sources */,
+				A9A928DF2C9867D4004C9856 /* ChatMessageCellViewModel.swift in Sources */,
+				A9AC54762C9488F8007D2C84 /* LoginView.swift in Sources */,
+				A9AC549F2C95A4A5007D2C84 /* RootView.swift in Sources */,
+				A9E39AE82C8D804400541BB0 /* Date.swift in Sources */,
+				A9EC8F002C8A44890034589B /* CircularProfileImageView.swift in Sources */,
+				A9EC8EFB2C89ADEF0034589B /* NavigationBarColor.swift in Sources */,
+				A9EC8EB52C8808B90034589B /* ContentView.swift in Sources */,
+				A9AC54742C943B80007D2C84 /* WelcomeView.swift in Sources */,
+				A9AC547D2C94A4B2007D2C84 /* RegistrationView.swift in Sources */,
+				A96FDFD72C8C24EA006625A7 /* ChatMessageCell.swift in Sources */,
+				A9AC54792C948B09007D2C84 /* LoginViewModel.swift in Sources */,
+				A94040C82C8AA8D1007F45CE /* ChatView.swift in Sources */,
+				A9E39AED2C8FFAD900541BB0 /* ProfileView.swift in Sources */,
+				A9AC54A12C95A4FC007D2C84 /* RootViewModel.swift in Sources */,
+				A9AC547F2C94A5B2007D2C84 /* RegistrationViewModel.swift in Sources */,
+				A9AC547B2C949E7E007D2C84 /* FloatingField.swift in Sources */,
+				A9EC8F0A2C8A62A20034589B /* ContectView.swift in Sources */,
+				A9EC8EF82C89A4BC0034589B /* InboxView.swift in Sources */,
+				A9EC8F022C8A47460034589B /* User.swift in Sources */,
+				A9EC8EF32C89A2700034589B /* MainTabbarView.swift in Sources */,
+				A9AC54AF2C973632007D2C84 /* IndoxService.swift in Sources */,
+				A9EC8F082C8A54670034589B /* InboxViewModel.swift in Sources */,
+				A9AC54B32C97A9C0007D2C84 /* StorageUploader.swift in Sources */,
+				A9EC8EFD2C89B1AE0034589B /* InboxRowView.swift in Sources */,
+				A9AC54712C9439C0007D2C84 /* SettingsViewModel.swift in Sources */,
+				A9AC548E2C954ABF007D2C84 /* AuthService.swift in Sources */,
+				A9EC8EB32C8808B90034589B /* Whatapp_CloneApp.swift in Sources */,
+				A9AC549B2C955EB2007D2C84 /* WelcomeViewModel.swift in Sources */,
+				A9AC546E2C942F0F007D2C84 /* SettingsOption.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EC8EBB2C8808BB0034589B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EC8EC42C8808BB0034589B /* Whatapp_CloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EC8EC52C8808BB0034589B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EC8ED02C8808BB0034589B /* Whatapp_CloneUITestsLaunchTests.swift in Sources */,
+				A9EC8ECE2C8808BB0034589B /* Whatapp_CloneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9EC8EC12C8808BB0034589B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9EC8EAE2C8808B90034589B /* Whatapp-Clone */;
+			targetProxy = A9EC8EC02C8808BB0034589B /* PBXContainerItemProxy */;
+		};
+		A9EC8ECB2C8808BB0034589B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9EC8EAE2C8808B90034589B /* Whatapp-Clone */;
+			targetProxy = A9EC8ECA2C8808BB0034589B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A9EC8ED12C8808BB0034589B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9EC8ED22C8808BB0034589B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9EC8ED42C8808BB0034589B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Whatapp-Clone/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Override.Whatapp-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9EC8ED52C8808BB0034589B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Whatapp-Clone/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Override.Whatapp-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9EC8ED72C8808BB0034589B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Override.Whatapp-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whatapp-Clone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whatapp-Clone";
+			};
+			name = Debug;
+		};
+		A9EC8ED82C8808BB0034589B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Override.Whatapp-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whatapp-Clone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whatapp-Clone";
+			};
+			name = Release;
+		};
+		A9EC8EDA2C8808BB0034589B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Override.Whatapp-CloneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Whatapp-Clone";
+			};
+			name = Debug;
+		};
+		A9EC8EDB2C8808BB0034589B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Override.Whatapp-CloneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Whatapp-Clone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9EC8EAA2C8808B90034589B /* Build configuration list for PBXProject "Whatapp-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EC8ED12C8808BB0034589B /* Debug */,
+				A9EC8ED22C8808BB0034589B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9EC8ED32C8808BB0034589B /* Build configuration list for PBXNativeTarget "Whatapp-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EC8ED42C8808BB0034589B /* Debug */,
+				A9EC8ED52C8808BB0034589B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9EC8ED62C8808BB0034589B /* Build configuration list for PBXNativeTarget "Whatapp-CloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EC8ED72C8808BB0034589B /* Debug */,
+				A9EC8ED82C8808BB0034589B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9EC8ED92C8808BB0034589B /* Build configuration list for PBXNativeTarget "Whatapp-CloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EC8EDA2C8808BB0034589B /* Debug */,
+				A9EC8EDB2C8808BB0034589B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9AC54912C95566D007D2C84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+		A9AC54A42C969E53007D2C84 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9AC54922C95566D007D2C84 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9AC54912C95566D007D2C84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A9AC54942C95566D007D2C84 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9AC54912C95566D007D2C84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A9AC54962C95566D007D2C84 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9AC54912C95566D007D2C84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		A9AC54982C95566D007D2C84 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9AC54912C95566D007D2C84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		A9AC54A52C969E53007D2C84 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9AC54A42C969E53007D2C84 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9EC8EA72C8808B90034589B /* Project object */;
+}
